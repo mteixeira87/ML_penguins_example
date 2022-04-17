@@ -3,6 +3,10 @@ import streamlit as st
 #from sklearn.ensemble import RandomForestClassifier
 #from sklearn.model_selection import train_test_split
 import pickle
+st.title('Penguin Classifier')
+st.write("This app uses 6 inputs to predict the species of penguins "
+         "using a model build on the Palmer's Penguins dataset. "
+         "Use the form below to get started!")
 rf_pickle = open('random_forest_penguin.pickle','rb')
 map_pickle = open('output_penguin.pickle','rb')
 rfc = pickle.load(rf_pickle)
